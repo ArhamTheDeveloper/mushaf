@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.arhamthedeveloper.mushaf",
+  "name": "Mushaf",
+  "version": "1.0.0",
+  "author": "MuhammadArham",
+  "license": "MIT",
+  "description": "Mushaf: offline Quran reader for the Omarchy bar. Uthmani Arabic text with Sahih International translation, reference jump, no audio.",
+  "kinds": ["bar-widget"],
+  "entryPoints": { "barWidget": "BarWidget.qml" },
+  "barWidget": {
+    "displayName": "Mushaf",
+    "description": "Read the Quran text from the bar", 
+    "category": "Reading",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}

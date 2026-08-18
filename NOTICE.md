@@ -28,6 +28,35 @@ This plugin distributes both texts unmodified, offline, in a free
 - Sahih International translation © 1997 Dar Abul-Qasim, used with permission
 - Data retrieved via api.alquran.cloud
 
+## Bar plugin structure (Canon)
+
+The plugin architecture, panel/bar widget structure, and navigation UX are
+derived from [Canon](https://github.com/RamenPacket84/canon), a Bible reader
+for the Omarchy bar.
+
+> MIT License
+>
+> Copyright (c) 2026 Ramen Packet
+>
+> Permission is hereby granted, free of charge, to any person obtaining a
+> copy of this software and associated documentation files (the
+> "Software"), to deal in the Software without restriction, including
+> without limitation the rights to use, copy, modify, merge, publish,
+> distribute, sublicense, and/or sell copies of the Software, and to
+> permit persons to whom the Software is furnished to do so, subject to
+> the following conditions:
+>
+> The above copyright notice and this permission notice shall be included
+> in all copies or substantial portions of the Software.
+>
+> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+> OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+> MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+> IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+> CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+> TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+> SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 ## Rebuilding the data
 
 `data/quran.json` is generated, not hand-edited. To rebuild it:

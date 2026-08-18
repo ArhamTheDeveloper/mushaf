@@ -17,7 +17,7 @@ omarchy plugin enable io.github.arhamthedeveloper.mushaf --section right
 From git later:
 
 ```sh
-omarchy plugin add https://github.com/<you>/mushaf.git --enable
+omarchy plugin add https://github.com/ArhamTheDeveloper/mushaf.git --enable
 omarchy bar move io.github.arhamthedeveloper.mushaf --section right
 ```
 
@@ -64,3 +64,18 @@ omarchy plugin remove io.github.arhamthedeveloper.mushaf
 The reading position in `quran-reader.json` is left in place. This plugin is
 not a clock clone; removing it does not touch `omarchy.clock`. It also does
 not touch `mus.quran`'s audio player or its state file (`quran.json`).
+
+## Acknowledgments
+
+This project's code was written with heavy assistance from AI (Codebuff):
+product direction, design decisions, and review were the author's, while the
+implementation was largely AI-generated.
+
+The Quran text itself is **not** AI-generated — the Arabic (Uthmani script)
+and Sahih International translation are the authoritative Tanzil texts,
+bundled unchanged (see [NOTICE.md](NOTICE.md)).
+
+The plugin's architecture and UX are derived from
+[Canon](https://github.com/RamenPacket84/canon), an MIT-licensed Bible
+reader for the Omarchy bar — see [NOTICE.md](NOTICE.md) for its license
+notice.

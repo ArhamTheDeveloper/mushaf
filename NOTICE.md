@@ -57,6 +57,20 @@ for the Omarchy bar.
 > TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 > SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+## Bundled font (Amiri Quran)
+
+The Uthmani Arabic text is rendered with the **Amiri Quran** typeface,
+bundled in `assets/fonts/AmiriQuran.ttf` and loaded at runtime via
+`FontLoader`, so no font installation is required.
+
+> Copyright 2010-2022 The Amiri Project Authors
+> (https://github.com/aliftype/amiri).
+>
+> This Font Software is licensed under the SIL Open Font License, Version
+> 1.1. The full license text is included verbatim in
+> [`assets/fonts/OFL.txt`](assets/fonts/OFL.txt) and available at
+> https://openfontlicense.org/.
+
 ## Rebuilding the data
 
 `data/quran.json` is generated, not hand-edited. To rebuild it:

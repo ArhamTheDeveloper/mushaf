@@ -27,9 +27,15 @@ Panel {
   readonly property color mutedForeground: Color.muted
   readonly property color accentColor: Color.accent
   readonly property string contentFontFamily: bar ? bar.fontFamily : Style.font.family
-  // Quran-specialized face for Uthmani Arabic text. Generic fonts render
-  // shadda+kasra (بِّ) and the dagger alif / small meem marks incorrectly.
-  readonly property string arabicFontFamily: "Amiri Quran"
+  // Quran-specialized face for Uthmani Arabic text, bundled in the repo so
+  // users need no font install. Generic fonts render shadda+kasra (بِّ) and
+  // the dagger alif / small meem marks incorrectly.
+  FontLoader {
+    id: amiriQuran
+    source: Qt.resolvedUrl("assets/fonts/AmiriQuran.ttf")
+  }
+  readonly property string arabicFontFamily: amiriQuran.status === FontLoader.Ready
+    ? amiriQuran.name : "sans-serif"
 
   readonly property var currentAyahs: Model.ayahsFor(root.quran, root.surah)
   readonly property string basmala: Model.basmalaFor(root.quran, root.surah)

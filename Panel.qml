@@ -69,8 +69,13 @@ Panel {
     return false
   }
 
+  // Installed plugins receive a PluginBarApi whose centerHoverRevealSuppressed
+  // is read-only; assigning it throws and aborts close() before the panel
+  // hides. Prefer the setter, falling back to the property on older shells.
   function setCenterHoverRevealSuppressed(value) {
-    if (root.bar && "centerHoverRevealSuppressed" in root.bar)
+    if (root.bar && typeof root.bar.setCenterHoverRevealSuppressed === "function")
+      root.bar.setCenterHoverRevealSuppressed(value)
+    else if (root.bar && "centerHoverRevealSuppressed" in root.bar)
       root.bar.centerHoverRevealSuppressed = value
   }
 
